@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О юристе — Иванов Алексей Алексеевич</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Шрифты Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800 antialiased selection:bg-neutral-900 selection:text-white relative min-h-screen">
+
+  <!-- ЕДИНЫЙ КРУПНЫЙ ФИКСИРОВАННЫЙ ФОН С ЛОГОТИПОМ -->
+  <div class="fixed inset-0 flex items-center justify-center pointer-events-none select-none -z-10 overflow-hidden">
+    <img src="low.jpg" alt="" class="w-[115vw] max-w-[1500px] min-w-[700px] opacity-[0.06] grayscale object-contain" onerror="this.src='low.png';">
+  </div>
+
+  <!-- Навигация: меню прижато вправо -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="text-lg font-bold tracking-tight text-neutral-900">
+          Юрист Иванов<span class="text-neutral-400 font-light hidden sm:inline ml-1">/ Правовая защита</span>
+        </span>
+      </a>
+      <nav class="flex items-center space-x-6 sm:space-x-8 text-sm font-medium text-neutral-600">
+        <a href="about.html" class="text-neutral-950 font-semibold border-b-2 border-neutral-900 pb-1">О юристе</a>
+        <a href="index.html#process" class="hover:text-neutral-900 transition">Как работаю</a>
+        <a href="reviews.html" class="hover:text-neutral-900 transition">Отзывы</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Заголовок страницы -->
+  <section class="max-w-6xl mx-auto px-6 pt-16 pb-12">
+    <div class="max-w-3xl">
+      <a href="index.html" class="inline-flex items-center gap-2 text-xs font-semibold text-neutral-500 hover:text-neutral-900 uppercase tracking-widest mb-6 transition">
+        ← На главную
+      </a>
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-neutral-950">
+        Иванов Алексей Алексеевич
+      </h1>
+      <p class="mt-4 text-lg text-neutral-600 leading-relaxed">
+        Юрист с опытом работы в уголовном, административном и гражданском праве. Защита прав граждан, представительство в судах и взаимодействие с надзорными инстанциями.
+      </p>
+    </div>
+  </section>
+
+  <!-- Основной контент страницы "О юристе" -->
+  <section class="max-w-6xl mx-auto px-6 pb-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Фото юриста и контакты -->
+      <div class="lg:col-span-5 space-y-6 sticky top-24">
+        <div class="aspect-[3/4] rounded-2xl bg-neutral-200 border border-neutral-300 overflow-hidden shadow-sm">
+          <img src="photo.jpg" alt="Иванов Алексей Алексеевич" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center p-4 text-center text-xs text-neutral-500\'>photo.jpg</div>'">
+        </div>
+        <div class="p-6 bg-white/95 backdrop-blur-sm rounded-2xl border border-neutral-200 text-sm space-y-2">
+          <div class="text-neutral-500 text-xs font-semibold uppercase tracking-wider mb-2">Прямые контакты</div>
+          <div><a href="tel:+79852982564" class="text-neutral-900 font-semibold hover:underline">+7 (985) 298-25-64</a></div>
+          <div><a href="mailto:alexiva5353@gmail.com" class="text-neutral-600 hover:underline">alexiva5353@gmail.com</a></div>
+          <div>Telegram: <a href="https://t.me/DvorininAlexa" target="_blank" class="text-neutral-900 font-medium hover:underline">@DvorininAlexa</a></div>
+        </div>
+      </div>
+
+      <!-- Текстовый блок биографии и опыта -->
+      <div class="lg:col-span-7 space-y-12">
+        
+        <div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-4">Профессиональный профиль</h2>
+          <p class="text-neutral-600 leading-relaxed mb-4 text-base">
+            Занимаюсь подготовкой процессуальных документов любой сложности, представлением интересов доверителей в судах всех инстанций, а также системным взаимодействием со следственными органами, прокуратурой и органами надзора.
+          </p>
+          <p class="text-neutral-600 leading-relaxed text-base">
+            Имею практический опыт ведения дел на стороне потерпевших, подготовки процессуальных жалоб в порядке ст. 124–125 УПК РФ, а также формирования материалов для международных правозащитных механизмов защиты прав человека.
+          </p>
+        </div>
+
+        <!-- Образование и бэкграунд -->
+        <div class="p-8 rounded-2xl bg-white/95 backdrop-blur-sm border border-neutral-200 shadow-sm space-y-6">
+          <h3 class="text-lg font-bold text-neutral-900">Образование и квалификация</h3>
+          
+          <div class="flex items-start gap-3">
+            <span class="text-emerald-600 font-bold text-lg leading-none mt-0.5">✓</span>
+            <div>
+              <strong class="text-neutral-900 block text-sm">МГЮА им. О.Е. Кутафина — Бакалавриат</strong>
+              <span class="text-sm text-neutral-600">Гражданско-правовая специализация (2019 – 2023 гг.). Фундаментальная база материального и процессуального права.</span>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <span class="text-emerald-600 font-bold text-lg leading-none mt-0.5">✓</span>
+            <div>
+              <strong class="text-neutral-900 block text-sm">МГЮА им. О.Е. Кутафина — Магистратура</strong>
+              <span class="text-sm text-neutral-600">Уголовно-правовая специализация (2023 – 2025 гг.). Углубленная квалификация в области уголовного права и процесса.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Опыт работы -->
+        <div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-6">Практический опыт</h2>
+          <div class="space-y-4">
+            
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-bold text-neutral-900 text-sm">Защита потерпевших и споры с госорганами</h4>
+              <p class="text-neutral-600 text-xs mt-1 mb-2">Правозащитные организации и НКО</p>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                Ведение дел на стороне потерпевших в уголовных и административных процессах. Подготовка сообщений о преступлениях, ходатайств, жалоб по ст. 124–125 УПК РФ на незаконные действия и бездействие органов следствия, исков о компенсации морального и материального вреда.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-bold text-neutral-900 text-sm">Административная и судебная практика</h4>
+              <p class="text-neutral-600 text-xs mt-1 mb-2">Частная практика</p>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                Защита интересов граждан по делам об административных правонарушениях (КоАП РФ), досудебное урегулирование, разработка процессуальных жалоб и успешное судебное представительство.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-bold text-neutral-900 text-sm">Понимание внутренней работы следственных органов</h4>
+              <p class="text-neutral-600 text-xs mt-1 mb-2">Следственный комитет РФ</p>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                Опыт помощи в подготовке материалов уголовных дел, анализе доказательственной базы и следственных действиях, позволяющий точно видеть слабые места в материалах обвинения.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-bold text-neutral-900 text-sm">IT-право и защита персональных данных</h4>
+              <p class="text-neutral-600 text-xs mt-1 mb-2">Центр цифровых прав</p>
+              <p class="text-neutral-600 text-sm leading-relaxed">
+                Экспертиза в сфере 152-ФЗ и GDPR, подготовка политик конфиденциальности, сопровождение цифровых проектов и контрактный анализ.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Ключевые принципы -->
+        <div>
+          <h2 class="text-xl font-bold text-neutral-900 mb-6">Принципы работы</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-semibold text-neutral-900 text-sm mb-1">Честная оценка перспектив</h4>
+              <p class="text-neutral-600 text-xs leading-relaxed">
+                Объективный правовой анализ до подписания договора. Никаких ложных надежд, если ситуация бесперспективна.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-white/95 backdrop-blur-sm border border-neutral-200">
+              <h4 class="font-semibold text-neutral-900 text-sm mb-1">Фиксированные этапы</h4>
+              <p class="text-neutral-600 text-xs leading-relaxed">
+                Поэтапная оплата и прозрачные условия соглашения без скрытых или неожиданных платежей.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Блок призыва к действию -->
+        <div class="pt-4">
+          <a href="index.html#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-neutral-900 rounded-xl hover:bg-neutral-800 transition shadow-sm">
+            Записаться на консультацию
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="border-t border-neutral-200/80 py-10 bg-white/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-neutral-500">
+      <div>© 2026 Юрист Иванов Алексей Алексеевич. Все права защищены.</div>
+      <div class="flex flex-wrap gap-6 items-center">
+        <a href="tel:+79852982564" class="hover:text-neutral-900 transition">+7 (985) 298-25-64</a>
+        <a href="mailto:alexiva5353@gmail.com" class="hover:text-neutral-900 transition">alexiva5353@gmail.com</a>
+        <a href="https://t.me/DvorininAlexa" target="_blank" class="hover:text-neutral-900 transition font-medium">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
